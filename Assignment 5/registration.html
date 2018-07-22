@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration - Tiny Oranges - Le</title>
+        <link rel="stylesheet" href="normalize1.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
+        <script src=registration.js></script>
+    </head>
+    <body>
+        <div class="main-container">
+        <header>
+            <div class="center">
+                <img src="orange.jpg" alt="logo" width="75" height="75">
+                <h1 class="app-title">Tiny Oranges</h1>
+            </div>
+        </header>
+        <nav id="navi">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+        <section id="reg-center">
+            <h1>Register</h1>
+            <form id="signup" name="signup" method="post" 
+                action="https://httpbin.org/post"
+                onsubmit="return formValidation();">
+            <label for="fName">First Name: </label>
+            <input type="text" name="fName" id="fName" required="required" onchange="validatefName()"/>
+            <label for="lName">Last Name: </label>
+            <input type="text" name="lName" id="lName" required="required" onchange="validatelName()"/><br><br>
+
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" required="required" onchange="validateUsername()"/><br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" required="required" onchange="validatePass()"/>
+            <label for="rePassword">Retype Password: </label>
+            <input type="password" name="rePassword" id="rePassword" required="required" onchange="validateRePass()"/><br>
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" required="required" onchange="validatePhone()"
+            placeholder="111-111-1111"/>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required="required"
+            placeholder="example@email.com" title="Please enter a valid email"/>
+            
+            <h3>Shipping Address</h3>
+            <label for="unit">Unit #: </label>
+            <input type="text" name="unit" id="unit"/><br>
+            <label for="streetNum">Street #: </label>
+            <input type="text" name="streetNum" id="streetNum" required="required"/>
+            <labeL for="street">Street Name: </labeL>
+            <input type="text" name="street" id="street" required="required" onchange="validateStreet()"/><br>
+            <label for="city">City: </label>
+            <input type="text" name="city" id="city" required="required" onchange="validateCity()"/>
+            <label for="prov">Province: </label>
+            <input type="text" list="provinces" name="prov" id="prov" required="required" onchange="validateProv()"/>
+            <datalist id="provinces">
+                <option value="Alberta">
+                <option value="British Columbia">
+                <option value="Manitoba">
+                <option value="New Brunswick">
+                <option value="Newfoundland and Labrador">
+                <option value="Nova Scotia">
+                <option value="Ontario">
+                <option value="Prince Edward Island">
+                <option value="Quebec">
+                <option value="Saskatchewan">
+            </datalist><br>
+            <label for="pCode">Postal Code: </label>
+            <input type="text" name="pCode" id="pCode" required="required" onchange="validatePCode()"
+            placeholder="C1A1A7"/>
+            
+            <input type="hidden" name="lastName" id="lastName" value="Le"/>
+            <input type="hidden" name="studentId" id="studentId" value="111657151"/>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear" onclick="clearErrors()">
+            </p>
+        </form>
+        </section>
+        <aside id="side-panel">
+            <h2>Errors</h2>
+            <div id="fNameError"></div>
+            <div id="lNameError"></div>
+            <div id="userError"></div>
+            <div id="passError"></div>
+            <div id="rePassError"></div>
+            <div id="phoneError"></div>
+            <div id="streetError"></div>
+            <div id="cityError"></div>
+            <div id="provError"></div>
+            <div id="pCodeError"></div>
+        </aside>
+        <footer>
+            <div class="center">
+                &copy; 2018 Cindy Le
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>
