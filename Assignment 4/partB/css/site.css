@@ -1,0 +1,120 @@
+/*********************************************************************************
+*
+* WEB222 – Assignment #4b
+*
+* I declare that this assignment is my own work in accordance with Seneca
+* Academic Policy. No part of this assignment has been copied manually or
+* electronically from any other source (including web sites) or distributed to
+* other students.
+*
+* Name: Cindy Le           Student ID: 111657151           Date: Mar 23, 2018                 
+*
+*******************************************************************************/
+/* Select all elements with class "main-container" and adjust its max width and margin */
+.main-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Select all <nav> elements that are a child of an element with class "main-container"
+and adjust its size and position */
+.main-container nav {
+    width: 30%;
+    float: left;
+}
+
+/* Select all of the "main" class that is a child of the "main-container" and adjust its
+size and position */
+.main-container .main {
+    width: 70%;
+    float: right;
+}
+
+/* Select the <header> element that is a child of the "main-container" and adjust its padding, 
+background colour, bottom border and bottom margin */
+.main-container header {
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+}
+
+/* Select the <h1> element that is nested within the <header> element that is a child of the
+"main-container" and adjust its size, font size, position, text alignment and top margin*/
+.main-container header h1 {
+    width: 70%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+/* Select all of the <footer> element that is a child of the "main-container" and position
+ the element beneath all floating elements and adjust its padding, background colour,
+ top border, and font size */
+.main-container footer {
+    clear: both;
+    padding: 20px 10px;
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+    font-size: 13px;
+}
+
+/* Select the unique id assigned with "logo" and adjust its width, font size and font weight */
+#logo {
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* Select the image that is nested within "#logo" and adjust its width and veritcal alighment */
+#logo img {
+    width: 94px;
+    vertical-align: middle;
+}
+/* Select <ul> element nested inside the navigation menu that is a child of 
+the "main-container" and adjust its list style type to show no bullets */
+nav ul {
+    list-style-type: none;
+}
+
+/* Select the anchor that is nested in the <ul> element that is the 
+<nav> element's child and adjust its display, text decoration and padding */
+nav ul a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Select all province classes and adjust their width, float, margin and height.
+Each new element is positioned to the right of the previoius element */
+div.province {
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+}
+
+/* Select all "description" classes inside "province" classes and adjust
+their max height, overflow y, overflow x, and margin */
+div.province .description {
+    max-height: 165px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 8px 0;
+}
+
+/* Select all anchor elements of the "description" classes and render the link as
+"block-level" element and align text to cente. Change background colour,
+ colour, text decoration and padding */
+div.province a {
+    display: block;
+    text-align: center;
+    background-color: #555555;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Select flag image and adjust its width */
+img.flag {
+    width: 100%;
+}
